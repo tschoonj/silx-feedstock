@@ -21,7 +21,6 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - pyopencl
     - toolchain
   run:
     - python
@@ -29,7 +28,6 @@ requirements:
     - numpy x.x
     - fabio >=0.4
     - h5py
-    - pyopencl
     - mako
     - ipython
     - qtconsole

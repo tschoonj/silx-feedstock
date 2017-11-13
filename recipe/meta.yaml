@@ -20,12 +20,12 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - numpy 1.11.*
     - toolchain
   run:
     - python
     - setuptools
-    - numpy x.x
+    - numpy >=1.11
     - fabio >=0.4
     - h5py
     - mako

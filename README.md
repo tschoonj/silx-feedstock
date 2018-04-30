@@ -19,14 +19,16 @@ of Qt widgets to browse and visualize data.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/silx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/silx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/silx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/silx-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/silx-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/silx-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/silx-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/silx-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/silx-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/silx-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/silx/badges/version.svg)](https://anaconda.org/conda-forge/silx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/silx/badges/downloads.svg)](https://anaconda.org/conda-forge/silx)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-silx-green.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) |
 
 Installing silx
 ===============

@@ -1,6 +1,6 @@
 {% set name = "silx" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "fe38c6301821b8e4d7ec7c701cce4395040ccab559eeda1f877374293591ce1e" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "bde47ca309c3541333ea3dbbc2dedbe839f04f166424685797daad4dc073a7b6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py build install --single-version-externally-managed --record record.txt
 
 requirements:

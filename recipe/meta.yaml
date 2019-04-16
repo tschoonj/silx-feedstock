@@ -30,10 +30,12 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - fabio >=0.7
     - h5py
+    - six
     - mako
     - ipython
     - qtconsole
     - matplotlib >=1.2.0
+    - python-dateutil
     # optional dep causing lots of problems
     #- pyopengl
 

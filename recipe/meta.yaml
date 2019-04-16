@@ -28,7 +28,7 @@ requirements:
     - python
     - setuptools
     - {{ pin_compatible('numpy') }}
-    - fabio >=0.4
+    - fabio >=0.7
     - h5py
     - mako
     - ipython

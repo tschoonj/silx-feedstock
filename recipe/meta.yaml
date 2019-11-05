@@ -13,16 +13,18 @@ source:
 
 build:
   number: 0
-  script: python setup.py build install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv --global-option build --global-option --force-cython "
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - cython
+    - pip
     - python
     - setuptools
-    - numpy
+    - numpy >=1.12
 
   run:
     - python

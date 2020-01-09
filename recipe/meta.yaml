@@ -61,7 +61,7 @@ about:
     applications at synchrotron radiation facilities. It aims at providing
     reading/writing different file formats, data reduction routines and a set
     of Qt widgets to browse and visualize data.
-  doc_url: https://pythonhosted.org/silx/
+  doc_url: http://www.silx.org/doc/silx/latest/
   dev_url: https://github.com/silx-kit/silx
 
 extra:

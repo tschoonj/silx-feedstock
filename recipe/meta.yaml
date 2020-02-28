@@ -3,7 +3,7 @@
 {% set sha256 = "2346ee44eb65ffa23c82d86f401282ea0fde0b813f897f178d901ec09889b9dc" %}
 
 package:
-  name: {{ name|lower }}
+  name: silx-base
   version: {{ version }}
 
 source:
@@ -12,39 +12,57 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --global-option build --global-option --force-cython "
+  number: 1
 
-requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-  host:
-    - cython
-    - pip
-    - python
-    - setuptools
-    - numpy >=1.12
+outputs:
+  - name: silx-base
+    script: build_base.bat  # [win]
+    script: build_base.sh  # [not win]
+    build:
+      entry_points:
+        - silx = silx.__main__:main
 
-  run:
-    - python
-    - setuptools
-    - {{ pin_compatible('numpy') }}
-    - fabio >=0.7
-    - h5py
-    - six
-    - mako
-    - ipython
-    - qtconsole
-    - matplotlib >=1.2.0
-    - python-dateutil
-    # optional dep causing lots of problems
-    #- pyopengl
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+      host:
+        - cython
+        - pip
+        - python
+        - setuptools
+        - numpy >=1.12
+      run:
+        - python
+        - setuptools
+        - {{ pin_compatible('numpy') }}
+        - fabio >=0.9
+        - h5py
+        - six
+        - enum34  # [py2k]
+        - futures  # [py2k]
 
-test:
-  imports:
-    - silx
-    - silx.test
+    test:
+      imports:
+        - silx
+        - silx.test
+
+  - name: silx
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage('silx-base', exact=True) }}
+        - mako
+        - ipython
+        - qtconsole
+        - matplotlib
+        - python-dateutil
+        - pyqt
+        - scipy
+        - pillow
+        # optional dep causing lots of problems
+        #- pyopengl
 
 about:
   home: https://github.com/silx-kit/silx

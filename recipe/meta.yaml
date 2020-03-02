@@ -18,9 +18,6 @@ outputs:
   - name: silx-base
     script: build_base.bat  # [win]
     script: build_base.sh  # [not win]
-    build:
-      entry_points:
-        - silx = silx.__main__:main
 
     requirements:
       build:
@@ -50,6 +47,8 @@ outputs:
   - name: silx
     build:
       noarch: generic
+      entry_points:
+        - silx = silx.__main__:main
     requirements:
       run:
         - {{ pin_subpackage('silx-base', exact=True) }}

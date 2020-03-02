@@ -1,5 +1,5 @@
-About silx
-==========
+About silx-base
+===============
 
 Home: https://github.com/silx-kit/silx
 
@@ -137,20 +137,21 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-silx-green.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/silx.svg)](https://anaconda.org/conda-forge/silx) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-silx--base-green.svg)](https://anaconda.org/conda-forge/silx-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/silx-base.svg)](https://anaconda.org/conda-forge/silx-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/silx-base.svg)](https://anaconda.org/conda-forge/silx-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/silx-base.svg)](https://anaconda.org/conda-forge/silx-base) |
 
-Installing silx
-===============
+Installing silx-base
+====================
 
-Installing `silx` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `silx-base` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `silx` can be installed with:
+Once the `conda-forge` channel has been enabled, `silx, silx-base` can be installed with:
 
 ```
-conda install silx
+conda install silx silx-base
 ```
 
 It is possible to list all of the versions of `silx` available on your platform with:
@@ -198,17 +199,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating silx-feedstock
-=======================
+Updating silx-base-feedstock
+============================
 
-If you would like to improve the silx recipe or build a new
+If you would like to improve the silx-base recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/silx-feedstock are
+Note that all branches in the conda-forge/silx-base-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -224,5 +225,7 @@ Feedstock Maintainers
 =====================
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@t20100](https://github.com/t20100/)
 * [@tschoonj](https://github.com/tschoonj/)
+* [@vallsv](https://github.com/vallsv/)
 
